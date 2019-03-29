@@ -40,6 +40,17 @@ namespace FloresOlderr_Assignment4
             myWhitePen = new Pen(Color.White);
         }
 
+        /********************************************************************************
+         * 
+         * Method: DrawLine
+         * 
+         * Arguments: float m, float b, bool need_X_axis, bool need_Y_axis
+         * 
+         * Return Type: void
+         * 
+         * Purpose: Draws a line with specific coordinates through the plane. 
+         * 
+         * *******************************************************************************/
         void DrawLine(float m, float b, bool need_X_axis, bool need_Y_axis)
         {
             Graphics g = Playing_Field.CreateGraphics();
@@ -62,6 +73,17 @@ namespace FloresOlderr_Assignment4
             Console.WriteLine("startX: " + start_X + " startY: " + start_Y + " end_X: " + end_X + " end_Y: " + end_Y); 
         }
 
+        /********************************************************************************
+        * 
+        * Method: DrawQuadratic
+        * 
+        * Arguments: float a, float b, float c
+        * 
+        * Return Type: void
+        * 
+        * Purpose: Draws a curve with specific coordinates through the plane. 
+        * 
+        * *******************************************************************************/
         void DrawQuadratic(float a, float b, float c)
         {
             Graphics g = QuadraticPlayingField.CreateGraphics();//
@@ -86,6 +108,17 @@ namespace FloresOlderr_Assignment4
             g.DrawCurve(quad_pen, points);
         }
 
+        /********************************************************************************
+        * 
+        * Method: DrawCubic
+        * 
+        * Arguments: float a, float b, float c, float d
+        * 
+        * Return Type: void
+        * 
+        * Purpose: Draws a curve with specific coordinates through the plane. 
+        * 
+        * *******************************************************************************/
         void DrawCubic(float a, float b, float c, float d)
         {
             Graphics g = CubicPlayingField.CreateGraphics();
@@ -111,6 +144,17 @@ namespace FloresOlderr_Assignment4
             g.DrawCurve(cubic_pen, points);
         }
 
+        /********************************************************************************
+        * 
+        * Method: DrawCircle
+        * 
+        * Arguments: float h, float k, float r, bool need_X_axis, bool need_Y_axis
+        * 
+        * Return Type: void
+        * 
+        * Purpose: Draws a circle with specific coordinates through the plane. 
+        * 
+        * *******************************************************************************/
         void DrawCircle(float h, float k, float r, bool need_X_axis, bool need_Y_axis)
         {
             Graphics g = CirclePlayingField.CreateGraphics();//
@@ -141,6 +185,18 @@ namespace FloresOlderr_Assignment4
             Console.WriteLine("standard_origin_x: " + standard_origin_x + " standard_origin_y: " + standard_origin_y );
         }
 
+        /********************************************************************************
+        * 
+        * Method: DisplayError
+        * 
+        * Arguments: string formula
+        * 
+        * Return Type: void
+        * 
+        * Purpose: Displays an error for incorrect user input like strings, chars, 
+        *          or anything that does not convert to float or int. 
+        * 
+        * *******************************************************************************/
         private void DisplayError(string formula)
         {
             switch(formula)
@@ -180,6 +236,18 @@ namespace FloresOlderr_Assignment4
             //}
         }
 
+        /********************************************************************************
+        * 
+        * Method: DrawYAxis
+        * 
+        * Arguments: PictureBox p, bool need_it_for_line, bool need_it_for_quadratic, 
+        *            bool need_it_for_cubic, bool need_it_for_circle
+        * 
+        * Return Type: void
+        * 
+        * Purpose: Draws X Axis conditionally, depending on the coordinates. 
+        * 
+        * *******************************************************************************/
         private void DrawYAxis(PictureBox p, bool need_it_for_line, bool need_it_for_quadratic, bool need_it_for_cubic, bool need_it_for_circle)
         {
             if (need_it_for_line == true)
@@ -240,6 +308,18 @@ namespace FloresOlderr_Assignment4
             }
         }
 
+        /********************************************************************************
+        * 
+        * Method: DrawXAxis
+        * 
+        * Arguments: PictureBox p, bool need_it_for_line, bool need_it_for_quadratic, 
+        *            bool need_it_for_cubic, bool need_it_for_circle
+        * 
+        * Return Type: void
+        * 
+        * Purpose: Draws Y Axis conditionally, depending on the coordinates. 
+        * 
+        * *******************************************************************************/
         private void DrawXAxis(PictureBox p, bool need_it_for_line, bool need_it_for_quadratic, bool need_it_for_cubic, bool need_it_for_circle)
         {
             Graphics g = p.CreateGraphics();
@@ -302,6 +382,17 @@ namespace FloresOlderr_Assignment4
             }
         }
 
+        /********************************************************************************
+        * 
+        * Method: DrawTicks
+        * 
+        * Arguments: PictureBox p, bool need_x_axis, bool need_y_axis
+        * 
+        * Return Type: void
+        * 
+        * Purpose: Draws tick marks conditionally, depedning on the coordinates. 
+        * 
+        * *******************************************************************************/
         private void DrawTicks(PictureBox p, bool need_x_axis, bool need_y_axis)
         {
             Graphics g = p.CreateGraphics();
@@ -380,6 +471,17 @@ namespace FloresOlderr_Assignment4
             return 150 - y_value;
         }
 
+        /********************************************************************************
+        * 
+        * Method: CalculateEquationsBtn_Click
+        * 
+        * Arguments: object sender, EventArgs e
+        * 
+        * Return Type: void
+        * 
+        * Purpose: Handles button click events and display a graph or an error. 
+        * 
+        * *******************************************************************************/
         private void CalculateEquationsBtn_Click(object sender, EventArgs e)
         {
             Graphics lg = Playing_Field.CreateGraphics();
@@ -472,42 +574,6 @@ namespace FloresOlderr_Assignment4
             //    DisplayError("other");
             //}
         }
-
-        private void Playing_Field_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            //Graphics g = pictureBox1.CreateGraphics();
-            //if (QuadraticATextBox.Text != "" || QuadraticBTextBox.Text != "" || QuadraticCTextBox.Text != "")
-            //{
-            //    int a = Convert.ToInt32(QuadraticATextBox.Text.ToString());
-            //    int b = Convert.ToInt32(QuadraticBTextBox.Text.ToString());
-            //    int c = Convert.ToInt32(QuadraticCTextBox.Text.ToString());
-
-            //    Point[] points = new Point[7];
-            //    int index = 0;
-
-            //    for (int x = -3; x <= 3; x++)
-            //    {
-            //        int y = -1 * (a * (x * x)) + (b * x) + c;
-            //        points[index] = new Point(500 + (10 * x), (10 * y) + 200);
-            //        index++;
-            //    }
-
-            //    // y = ax2 + bx + c 
-            //    // Create pens.
-            //    Pen redPen = new Pen(Color.Red, 3);
-
-            //    float tension = 1.0F;
-
-            //    // Draw curve to screen.
-            //    g.DrawCurve(redPen, points, tension);
-            //}
-
-        } 
 
         private void LineMTextBox_Enter(object sender, EventArgs e)
         {

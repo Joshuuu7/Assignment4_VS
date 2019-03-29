@@ -32,7 +32,7 @@
             this.LineLabel = new System.Windows.Forms.Label();
             this.LineYLabel = new System.Windows.Forms.Label();
             this.LineMTextBox = new System.Windows.Forms.TextBox();
-            this.PlusLabel = new System.Windows.Forms.Label();
+            this.LinePlusLabel = new System.Windows.Forms.Label();
             this.LineBTextBox = new System.Windows.Forms.TextBox();
             this.QuadraticLabel = new System.Windows.Forms.Label();
             this.CalculateEquationsBtn = new System.Windows.Forms.Button();
@@ -80,49 +80,50 @@
             this.Playing_Field.Size = new System.Drawing.Size(300, 300);
             this.Playing_Field.TabIndex = 0;
             this.Playing_Field.TabStop = false;
-            this.Playing_Field.Click += new System.EventHandler(this.Playing_Field_Click);
             // 
             // LineLabel
             // 
             this.LineLabel.AutoSize = true;
-            this.LineLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LineLabel.Location = new System.Drawing.Point(657, 53);
+            this.LineLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LineLabel.Location = new System.Drawing.Point(650, 20);
             this.LineLabel.Name = "LineLabel";
-            this.LineLabel.Size = new System.Drawing.Size(93, 13);
+            this.LineLabel.Size = new System.Drawing.Size(133, 20);
             this.LineLabel.TabIndex = 1;
-            this.LineLabel.Text = "Line: y= mx + b";
+            this.LineLabel.Text = "Line: y = mx + b";
             // 
             // LineYLabel
             // 
             this.LineYLabel.AutoSize = true;
-            this.LineYLabel.Location = new System.Drawing.Point(657, 71);
+            this.LineYLabel.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LineYLabel.Location = new System.Drawing.Point(660, 60);
             this.LineYLabel.Name = "LineYLabel";
-            this.LineYLabel.Size = new System.Drawing.Size(24, 13);
+            this.LineYLabel.Size = new System.Drawing.Size(27, 17);
             this.LineYLabel.TabIndex = 2;
             this.LineYLabel.Text = "y = ";
             // 
             // LineMTextBox
             // 
             this.LineMTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.LineMTextBox.Location = new System.Drawing.Point(682, 69);
+            this.LineMTextBox.Location = new System.Drawing.Point(700, 60);
             this.LineMTextBox.Name = "LineMTextBox";
             this.LineMTextBox.Size = new System.Drawing.Size(52, 20);
             this.LineMTextBox.TabIndex = 1;
             this.LineMTextBox.Text = "1";
             this.LineMTextBox.Enter += new System.EventHandler(this.LineMTextBox_Enter);
             // 
-            // PlusLabel
+            // LinePlusLabel
             // 
-            this.PlusLabel.AutoSize = true;
-            this.PlusLabel.Location = new System.Drawing.Point(748, 72);
-            this.PlusLabel.Name = "PlusLabel";
-            this.PlusLabel.Size = new System.Drawing.Size(21, 13);
-            this.PlusLabel.TabIndex = 4;
-            this.PlusLabel.Text = "x +";
+            this.LinePlusLabel.AutoSize = true;
+            this.LinePlusLabel.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinePlusLabel.Location = new System.Drawing.Point(770, 60);
+            this.LinePlusLabel.Name = "LinePlusLabel";
+            this.LinePlusLabel.Size = new System.Drawing.Size(24, 17);
+            this.LinePlusLabel.TabIndex = 4;
+            this.LinePlusLabel.Text = "x +";
             // 
             // LineBTextBox
             // 
-            this.LineBTextBox.Location = new System.Drawing.Point(775, 71);
+            this.LineBTextBox.Location = new System.Drawing.Point(810, 60);
             this.LineBTextBox.Name = "LineBTextBox";
             this.LineBTextBox.Size = new System.Drawing.Size(52, 20);
             this.LineBTextBox.TabIndex = 2;
@@ -130,40 +131,40 @@
             // QuadraticLabel
             // 
             this.QuadraticLabel.AutoSize = true;
-            this.QuadraticLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QuadraticLabel.Location = new System.Drawing.Point(657, 110);
+            this.QuadraticLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuadraticLabel.Location = new System.Drawing.Point(650, 120);
             this.QuadraticLabel.Name = "QuadraticLabel";
-            this.QuadraticLabel.Size = new System.Drawing.Size(154, 13);
+            this.QuadraticLabel.Size = new System.Drawing.Size(206, 20);
             this.QuadraticLabel.TabIndex = 6;
-            this.QuadraticLabel.Text = "Quadratic: y = x2 + bx = c";
+            this.QuadraticLabel.Text = "Quadratic: y = x² + bx = c";
             // 
             // CalculateEquationsBtn
             // 
-            this.CalculateEquationsBtn.Location = new System.Drawing.Point(881, 380);
+            this.CalculateEquationsBtn.Location = new System.Drawing.Point(962, 460);
             this.CalculateEquationsBtn.Name = "CalculateEquationsBtn";
-            this.CalculateEquationsBtn.Size = new System.Drawing.Size(75, 23);
-            this.CalculateEquationsBtn.TabIndex = 7;
+            this.CalculateEquationsBtn.Size = new System.Drawing.Size(120, 40);
+            this.CalculateEquationsBtn.TabIndex = 13;
             this.CalculateEquationsBtn.Text = "Calculate";
             this.CalculateEquationsBtn.UseVisualStyleBackColor = true;
             this.CalculateEquationsBtn.Click += new System.EventHandler(this.CalculateEquationsBtn_Click);
             // 
             // QuadraticATextBox
             // 
-            this.QuadraticATextBox.Location = new System.Drawing.Point(682, 143);
+            this.QuadraticATextBox.Location = new System.Drawing.Point(700, 160);
             this.QuadraticATextBox.Name = "QuadraticATextBox";
             this.QuadraticATextBox.Size = new System.Drawing.Size(52, 20);
             this.QuadraticATextBox.TabIndex = 3;
             // 
             // QuadraticCTextBox
             // 
-            this.QuadraticCTextBox.Location = new System.Drawing.Point(881, 143);
+            this.QuadraticCTextBox.Location = new System.Drawing.Point(920, 160);
             this.QuadraticCTextBox.Name = "QuadraticCTextBox";
             this.QuadraticCTextBox.Size = new System.Drawing.Size(52, 20);
             this.QuadraticCTextBox.TabIndex = 5;
             // 
             // QuadraticBTextBox
             // 
-            this.QuadraticBTextBox.Location = new System.Drawing.Point(775, 143);
+            this.QuadraticBTextBox.Location = new System.Drawing.Point(810, 160);
             this.QuadraticBTextBox.Name = "QuadraticBTextBox";
             this.QuadraticBTextBox.Size = new System.Drawing.Size(52, 20);
             this.QuadraticBTextBox.TabIndex = 4;
@@ -171,37 +172,37 @@
             // CubicLabel
             // 
             this.CubicLabel.AutoSize = true;
-            this.CubicLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CubicLabel.Location = new System.Drawing.Point(657, 177);
+            this.CubicLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CubicLabel.Location = new System.Drawing.Point(650, 220);
             this.CubicLabel.Name = "CubicLabel";
-            this.CubicLabel.Size = new System.Drawing.Size(173, 13);
+            this.CubicLabel.Size = new System.Drawing.Size(227, 20);
             this.CubicLabel.TabIndex = 11;
-            this.CubicLabel.Text = "Cubic: y = ax3 + bx2 + cx + d";
+            this.CubicLabel.Text = "Cubic: y = ax³ + bx² + cx + d";
             // 
             // CubicATextBox
             // 
-            this.CubicATextBox.Location = new System.Drawing.Point(682, 214);
+            this.CubicATextBox.Location = new System.Drawing.Point(700, 260);
             this.CubicATextBox.Name = "CubicATextBox";
             this.CubicATextBox.Size = new System.Drawing.Size(52, 20);
             this.CubicATextBox.TabIndex = 6;
             // 
             // CubicDTextBox
             // 
-            this.CubicDTextBox.Location = new System.Drawing.Point(980, 213);
+            this.CubicDTextBox.Location = new System.Drawing.Point(1030, 260);
             this.CubicDTextBox.Name = "CubicDTextBox";
             this.CubicDTextBox.Size = new System.Drawing.Size(52, 20);
             this.CubicDTextBox.TabIndex = 9;
             // 
             // CubicCTextBox
             // 
-            this.CubicCTextBox.Location = new System.Drawing.Point(881, 213);
+            this.CubicCTextBox.Location = new System.Drawing.Point(920, 260);
             this.CubicCTextBox.Name = "CubicCTextBox";
             this.CubicCTextBox.Size = new System.Drawing.Size(52, 20);
             this.CubicCTextBox.TabIndex = 8;
             // 
             // CubicBTextBox
             // 
-            this.CubicBTextBox.Location = new System.Drawing.Point(775, 214);
+            this.CubicBTextBox.Location = new System.Drawing.Point(810, 260);
             this.CubicBTextBox.Name = "CubicBTextBox";
             this.CubicBTextBox.Size = new System.Drawing.Size(52, 20);
             this.CubicBTextBox.TabIndex = 7;
@@ -209,37 +210,40 @@
             // CircleLabel
             // 
             this.CircleLabel.AutoSize = true;
-            this.CircleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CircleLabel.Location = new System.Drawing.Point(657, 250);
+            this.CircleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CircleLabel.Location = new System.Drawing.Point(650, 320);
             this.CircleLabel.Name = "CircleLabel";
-            this.CircleLabel.Size = new System.Drawing.Size(192, 13);
+            this.CircleLabel.Size = new System.Drawing.Size(251, 20);
             this.CircleLabel.TabIndex = 16;
-            this.CircleLabel.Text = "Circle: (( x- h )2 + ( y - k )2 = r2 )";
+            this.CircleLabel.Text = "Circle: (( x- h )² + ( y - k )² = r² )";
             // 
             // QuadraticYLabel
             // 
             this.QuadraticYLabel.AutoSize = true;
-            this.QuadraticYLabel.Location = new System.Drawing.Point(657, 146);
+            this.QuadraticYLabel.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuadraticYLabel.Location = new System.Drawing.Point(660, 160);
             this.QuadraticYLabel.Name = "QuadraticYLabel";
-            this.QuadraticYLabel.Size = new System.Drawing.Size(24, 13);
+            this.QuadraticYLabel.Size = new System.Drawing.Size(27, 17);
             this.QuadraticYLabel.TabIndex = 17;
             this.QuadraticYLabel.Text = "y = ";
             // 
             // QuadraticXSquaredLabel
             // 
             this.QuadraticXSquaredLabel.AutoSize = true;
-            this.QuadraticXSquaredLabel.Location = new System.Drawing.Point(742, 149);
+            this.QuadraticXSquaredLabel.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuadraticXSquaredLabel.Location = new System.Drawing.Point(770, 160);
             this.QuadraticXSquaredLabel.Name = "QuadraticXSquaredLabel";
-            this.QuadraticXSquaredLabel.Size = new System.Drawing.Size(27, 13);
+            this.QuadraticXSquaredLabel.Size = new System.Drawing.Size(29, 17);
             this.QuadraticXSquaredLabel.TabIndex = 18;
-            this.QuadraticXSquaredLabel.Text = "x2 +";
+            this.QuadraticXSquaredLabel.Text = "x² +";
             // 
             // QuadraticXLabel
             // 
             this.QuadraticXLabel.AutoSize = true;
-            this.QuadraticXLabel.Location = new System.Drawing.Point(851, 146);
+            this.QuadraticXLabel.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuadraticXLabel.Location = new System.Drawing.Point(880, 160);
             this.QuadraticXLabel.Name = "QuadraticXLabel";
-            this.QuadraticXLabel.Size = new System.Drawing.Size(21, 13);
+            this.QuadraticXLabel.Size = new System.Drawing.Size(24, 17);
             this.QuadraticXLabel.TabIndex = 19;
             this.QuadraticXLabel.Text = "x +";
             // 
@@ -251,7 +255,6 @@
             this.QuadraticPlayingField.Size = new System.Drawing.Size(300, 300);
             this.QuadraticPlayingField.TabIndex = 20;
             this.QuadraticPlayingField.TabStop = false;
-            this.QuadraticPlayingField.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // CubicPlayingField
             // 
@@ -274,49 +277,53 @@
             // CubicX3Label
             // 
             this.CubicX3Label.AutoSize = true;
-            this.CubicX3Label.Location = new System.Drawing.Point(742, 220);
+            this.CubicX3Label.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CubicX3Label.Location = new System.Drawing.Point(770, 260);
             this.CubicX3Label.Name = "CubicX3Label";
-            this.CubicX3Label.Size = new System.Drawing.Size(27, 13);
+            this.CubicX3Label.Size = new System.Drawing.Size(29, 17);
             this.CubicX3Label.TabIndex = 23;
-            this.CubicX3Label.Text = "x3 +";
+            this.CubicX3Label.Text = "x³ +";
             // 
             // CubicXLabel
             // 
             this.CubicXLabel.AutoSize = true;
-            this.CubicXLabel.Location = new System.Drawing.Point(939, 217);
+            this.CubicXLabel.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CubicXLabel.Location = new System.Drawing.Point(990, 260);
             this.CubicXLabel.Name = "CubicXLabel";
-            this.CubicXLabel.Size = new System.Drawing.Size(21, 13);
+            this.CubicXLabel.Size = new System.Drawing.Size(24, 17);
             this.CubicXLabel.TabIndex = 24;
             this.CubicXLabel.Text = "x +";
             // 
             // CubicX2Label
             // 
             this.CubicX2Label.AutoSize = true;
-            this.CubicX2Label.Location = new System.Drawing.Point(845, 220);
+            this.CubicX2Label.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CubicX2Label.Location = new System.Drawing.Point(880, 260);
             this.CubicX2Label.Name = "CubicX2Label";
-            this.CubicX2Label.Size = new System.Drawing.Size(27, 13);
+            this.CubicX2Label.Size = new System.Drawing.Size(29, 17);
             this.CubicX2Label.TabIndex = 25;
-            this.CubicX2Label.Text = "x2 +";
+            this.CubicX2Label.Text = "x² +";
             // 
             // CubicYLabel
             // 
             this.CubicYLabel.AutoSize = true;
-            this.CubicYLabel.Location = new System.Drawing.Point(657, 217);
+            this.CubicYLabel.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CubicYLabel.Location = new System.Drawing.Point(660, 260);
             this.CubicYLabel.Name = "CubicYLabel";
-            this.CubicYLabel.Size = new System.Drawing.Size(24, 13);
+            this.CubicYLabel.Size = new System.Drawing.Size(27, 17);
             this.CubicYLabel.TabIndex = 26;
             this.CubicYLabel.Text = "y = ";
             // 
             // KCircleTextBox
             // 
-            this.KCircleTextBox.Location = new System.Drawing.Point(791, 288);
+            this.KCircleTextBox.Location = new System.Drawing.Point(830, 360);
             this.KCircleTextBox.Name = "KCircleTextBox";
             this.KCircleTextBox.Size = new System.Drawing.Size(52, 20);
             this.KCircleTextBox.TabIndex = 11;
             // 
             // HCircleTextBox
             // 
-            this.HCircleTextBox.Location = new System.Drawing.Point(682, 288);
+            this.HCircleTextBox.Location = new System.Drawing.Point(700, 360);
             this.HCircleTextBox.Name = "HCircleTextBox";
             this.HCircleTextBox.Size = new System.Drawing.Size(52, 20);
             this.HCircleTextBox.TabIndex = 10;
@@ -325,33 +332,36 @@
             // CircleXMinusLabel
             // 
             this.CircleXMinusLabel.AutoSize = true;
-            this.CircleXMinusLabel.Location = new System.Drawing.Point(648, 291);
+            this.CircleXMinusLabel.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CircleXMinusLabel.Location = new System.Drawing.Point(655, 360);
             this.CircleXMinusLabel.Name = "CircleXMinusLabel";
-            this.CircleXMinusLabel.Size = new System.Drawing.Size(33, 13);
+            this.CircleXMinusLabel.Size = new System.Drawing.Size(38, 17);
             this.CircleXMinusLabel.TabIndex = 29;
             this.CircleXMinusLabel.Text = "( ( x - ";
             // 
             // CircleYMinusLabel
             // 
             this.CircleYMinusLabel.AutoSize = true;
-            this.CircleYMinusLabel.Location = new System.Drawing.Point(740, 292);
+            this.CircleYMinusLabel.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CircleYMinusLabel.Location = new System.Drawing.Point(770, 360);
             this.CircleYMinusLabel.Name = "CircleYMinusLabel";
-            this.CircleYMinusLabel.Size = new System.Drawing.Size(45, 13);
+            this.CircleYMinusLabel.Size = new System.Drawing.Size(50, 17);
             this.CircleYMinusLabel.TabIndex = 30;
-            this.CircleYMinusLabel.Text = ")2 + ( y -";
+            this.CircleYMinusLabel.Text = ")² + ( y -";
             // 
             // EqualsLabel
             // 
             this.EqualsLabel.AutoSize = true;
-            this.EqualsLabel.Location = new System.Drawing.Point(849, 292);
+            this.EqualsLabel.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EqualsLabel.Location = new System.Drawing.Point(900, 360);
             this.EqualsLabel.Name = "EqualsLabel";
-            this.EqualsLabel.Size = new System.Drawing.Size(28, 13);
+            this.EqualsLabel.Size = new System.Drawing.Size(30, 17);
             this.EqualsLabel.TabIndex = 31;
-            this.EqualsLabel.Text = ")2 = ";
+            this.EqualsLabel.Text = ")² = ";
             // 
             // RCircleTextBox
             // 
-            this.RCircleTextBox.Location = new System.Drawing.Point(881, 288);
+            this.RCircleTextBox.Location = new System.Drawing.Point(940, 360);
             this.RCircleTextBox.Name = "RCircleTextBox";
             this.RCircleTextBox.Size = new System.Drawing.Size(52, 20);
             this.RCircleTextBox.TabIndex = 12;
@@ -359,11 +369,12 @@
             // CircleR2Label
             // 
             this.CircleR2Label.AutoSize = true;
-            this.CircleR2Label.Location = new System.Drawing.Point(939, 292);
+            this.CircleR2Label.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CircleR2Label.Location = new System.Drawing.Point(1000, 360);
             this.CircleR2Label.Name = "CircleR2Label";
-            this.CircleR2Label.Size = new System.Drawing.Size(19, 13);
+            this.CircleR2Label.Size = new System.Drawing.Size(20, 17);
             this.CircleR2Label.TabIndex = 33;
-            this.CircleR2Label.Text = "2 )";
+            this.CircleR2Label.Text = "² )";
             // 
             // LineContainerLabel
             // 
@@ -405,7 +416,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1044, 633);
+            this.ClientSize = new System.Drawing.Size(1101, 633);
             this.Controls.Add(this.QuadraticContainerLabel);
             this.Controls.Add(this.CubicContainerLabel);
             this.Controls.Add(this.CircleContainerLabel);
@@ -439,7 +450,7 @@
             this.Controls.Add(this.CalculateEquationsBtn);
             this.Controls.Add(this.QuadraticLabel);
             this.Controls.Add(this.LineBTextBox);
-            this.Controls.Add(this.PlusLabel);
+            this.Controls.Add(this.LinePlusLabel);
             this.Controls.Add(this.LineMTextBox);
             this.Controls.Add(this.LineYLabel);
             this.Controls.Add(this.LineLabel);
@@ -461,7 +472,7 @@
         private System.Windows.Forms.Label LineLabel;
         private System.Windows.Forms.Label LineYLabel;
         private System.Windows.Forms.TextBox LineMTextBox;
-        private System.Windows.Forms.Label PlusLabel;
+        private System.Windows.Forms.Label LinePlusLabel;
         private System.Windows.Forms.TextBox LineBTextBox;
         private System.Windows.Forms.Label QuadraticLabel;
         private System.Windows.Forms.Button CalculateEquationsBtn;
